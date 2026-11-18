@@ -102,24 +102,24 @@ dialog{border:0;border-radius:22px;padding:26px;max-width:420px;width:calc(100% 
   <div class="hero">
     <div class="brand"><span class="mk">A</span><span>AURELIA<em> ACADEMY</em></span></div>
     <div class="mid">
-      <div class="eyebrow">Global Success 4 · Speaking Lab</div>
+      <div class="eyebrow">Global Success 4 · Practice Lab</div>
       <h1>Self-check 1</h1>
-      <p class="lead">Listen, read, build sentences and speak. Every spoken answer must reach <b>90% accuracy</b> before you can move on.</p>
+      <p class="lead">Listen, read, build sentences and answer. Finish every task correctly to unlock the next part.</p>
     </div>
-    <div class="stats"><div><b>6</b><span>PARTS</span></div><div><b>30</b><span>TASKS</span></div><div><b>90%</b><span>TO PASS</span></div><div><b>100</b><span>POINTS</span></div></div>
+    <div class="stats"><div><b>6</b><span>PARTS</span></div><div><b>30</b><span>TASKS</span></div><div><b>UK</b><span>MODEL VOICE</span></div><div><b>100</b><span>POINTS</span></div></div>
   </div>
   <div class="side"><div class="panel">
     <form id="form" class="card" novalidate>
-      <h2>Student details</h2><p class="sub">Enter your full name and class, then allow the microphone when your browser asks.</p>
+      <h2>Student details</h2><p class="sub">Enter your full name and class to begin.</p>
       <label class="fl" for="nm">Full name and class</label>
       <input class="inp" id="nm" placeholder="e.g. Nguyen Van A – 4A" maxlength="80" autocomplete="name">
-      <div id="mics" class="fb" style="margin:-6px 0 14px"></div><button class="btn sec lg" type="button" id="mt" style="margin-bottom:10px">Test microphone</button><button class="btn pri lg" type="submit">Start Self-check 1</button>
+      <button class="btn pri lg" type="submit">Start Self-check 1</button>
     </form>
     <div class="card"><ul class="rules">
-      <li><i>1</i><span><b>Speak until you pass.</b> Press Record, say the sentence, and repeat until the bar passes the 90% line.</span></li>
+      <li><i>1</i><span><b>Read aloud.</b> After each correct answer, listen to the British model, read the sentence aloud, then tap “I read it aloud”.</span></li>
       <li><i>2</i><span><b>Finish each part</b> to unlock the next one. Listen to the British model as often as you like.</span></li>
-      <li><i>3</i><span><b>Scoring:</b> right on the first try = full points; after a retry = half. Speaking counts half of a spoken task.</span></li>
-      <li><i>4</i><span>Use Chrome, Edge or Safari. Download your report at the end and send it to Google Classroom.</span></li>
+      <li><i>3</i><span><b>Scoring:</b> right on the first try = full points; after a retry = half. Reading aloud counts half of a speaking task.</span></li>
+      <li><i>4</i><span>Download your report at the end and send it to Google Classroom.</span></li>
     </ul></div>
   </div></div>
 </section>
@@ -148,12 +148,12 @@ const PARTS=[
  {k:'choice',pic:['q1a','q1b','q1c'],ans:LKEY[0]},{k:'choice',pic:['q2a','q2b','q2c'],ans:LKEY[1]},{k:'choice',pic:['q3a','q3b','q3c'],ans:LKEY[2]},{k:'choice',pic:['q4a','q4b','q4c'],ans:LKEY[3]},{k:'choice',pic:['q5a','q5b','q5c'],ans:LKEY[4]}]},
 {id:'T',t:'Part 2 · Look and tick or cross',d:'Does the word match the picture? Tap ✓ for yes or ✕ for no.',pts:10,items:[
  {k:'tf',img:'t1',w:'Britain',ans:true,tip:'This is the flag of Britain (the UK).'},{k:'tf',img:'t2',w:'chips',ans:false,tip:'These are grapes, not chips.'},{k:'tf',img:'t3',w:'listen to music',ans:true,tip:'She is wearing headphones: listen to music.'},{k:'tf',img:'t4',w:'ride a bike',ans:true,tip:'The boy is riding a bike to school.'},{k:'tf',img:'t5',w:'go to bed',ans:false,tip:'She is having breakfast, not going to bed.'}]},
-{id:'F',t:'Part 3 · Look, complete and read',d:'Type the missing word, then read the whole sentence aloud. Reach 90% to pass each sentence.',pts:20,items:[
+{id:'F',t:'Part 3 · Look, complete and read',d:'Type the missing word. Then listen to the British model and read the whole sentence aloud.',pts:20,items:[
  {k:'fill',img:'lem',a:'I want some',z:'.',ans:['lemonade'],say:['I want some lemonade']},{k:'fill',img:'usa',a:'He’s from',z:'.',ans:['america','the usa','usa'],say:['He’s from America']},{k:'fill',img:'horse',a:'She can',b:'a horse.',ans:['ride'],say:['She can ride a horse']},{k:'fill',img:'guit',a:'I',b:'on Sundays.',ans:['play the guitar','play guitar'],say:['I play the guitar on Sundays']},{k:'fill',img:'bed',a:'I',b:'at seven o’clock.',ans:['get up','wake up'],say:['I get up at seven o’clock']}]},
 {id:'C',t:'Part 4 · Read and complete',d:'Choose the right word for each gap. Each word is used once.',pts:10,items:[{k:'cloze'}]},
-{id:'O',t:'Part 5 · Make sentences',d:'Tap the blocks in the right order, then read your sentence aloud (90% to pass).',pts:20,items:[
+{id:'O',t:'Part 5 · Make sentences',d:'Tap the blocks in the right order. Then listen to the British model and read your sentence aloud.',pts:20,items:[
  {k:'order',tiles:['What time','do you','have breakfast'],end:'?',say:['What time do you have breakfast']},{k:'order',tiles:['I','want','some water'],end:'.',say:['I want some water']},{k:'order',tiles:['He','can','play','the piano'],end:'.',say:['He can play the piano']},{k:'order',tiles:['Where is','she','from'],end:'?',say:['Where is she from']},{k:'order',tiles:['I','listen to music','on Saturdays'],end:'.',say:['I listen to music on Saturdays']}]},
-{id:'S',t:'Part 6 · Ask and answer',d:'Look at the picture, answer the question in a full sentence and say it aloud. Challenge: try without the hint!',pts:20,items:[
+{id:'S',t:'Part 6 · Ask and answer',d:'Look at the picture and write a full-sentence answer. Challenge: try without the hint!',pts:20,items:[
  {k:'say',img:'a1',q:'What do you do on Tuesdays?',say:['I go to school on Tuesdays','I study on Tuesdays','I write on Tuesdays'],hint:'I go to school on Tuesdays.',pat:'I ______ on Tuesdays.'},
  {k:'say',img:'a2',q:'Where are you from?',say:['I’m from Malaysia','I am from Malaysia'],hint:'I’m from Malaysia.',pat:'I’m from ______.'},
  {k:'say',img:'a3',q:'Can you roller skate?',say:['No I can’t','No I cannot','No I can not'],hint:'No, I can’t.',pat:'Yes, I can. / No, I can’t.'},
@@ -165,7 +165,8 @@ const CLOZE={words:['April','Australia','can','Sundays','want'],txt:'My name is 
 let S,cur=0,user='';
 const fresh=()=>PARTS.map(p=>p.items.map(it=>({done:false,tries:0,sTries:0,sBest:0,sOK:!it.say,fOK:false,fx:0,n:it.k==='cloze'?5:1,cl:[]})));
 const comps=it=>it.say?2:1;
-function itemScore(p,it,s){ if(it.k==='cloze')return p.pts*(s.cl.filter(x=>x).reduce((a,x)=>a+x,0)/5);
+function itemScore(p,it,s){ if(it.k==='say')return s.done?p.pts/p.items.length*(s.tries<=1?1:.5)*(s.hint?.8:1):0;
+ if(it.k==='cloze')return p.pts*(s.cl.filter(x=>x).reduce((a,x)=>a+x,0)/5);
  const f=s.tries<=1?1:.5,sp=it.say?(s.sTries<=3?1:.5):0;return p.pts/p.items.length*(it.say?(f+sp)/2:f)*(s.done?1:0)}
 const total=()=>PARTS.reduce((a,p,i)=>a+p.items.reduce((b,it,j)=>b+itemScore(p,it,S[i][j]),0),0);
 const pDone=i=>S[i].every(s=>s.done);
@@ -178,29 +179,10 @@ function acc(heard,targets){let best={p:0,t:targets[0]};const h=norm(heard).spli
 let voice=null;function pick(){const v=speechSynthesis.getVoices();voice=v.find(x=>/en-GB/i.test(x.lang)&&/(google uk|daniel|serena|kate|libby|sonia|ryan)/i.test(x.name))||v.find(x=>/en[-_]GB/i.test(x.lang))||null}
 if('speechSynthesis'in window){pick();speechSynthesis.onvoiceschanged=pick}
 function say(t,r){if(!('speechSynthesis'in window))return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='en-GB';if(voice)u.voice=voice;u.rate=r||.9;speechSynthesis.speak(u)}
-function micHelp(){const inFrame=window.self!==window.top;
- if(location.protocol==='file:')return 'This page is opened as a file on your computer, and browsers block the microphone for local files. Upload the file to your website (https) and open that link in Chrome or Edge.';
- if(inFrame)return 'This page is shown inside a preview frame, which blocks the microphone. Open the page directly in its own browser tab (Chrome or Edge).';
- return 'The microphone is blocked for this site. Click the lock icon in the address bar, set Microphone to Allow, reload the page, then press Record again.'}
-const SR=window.SpeechRecognition||window.webkitSpeechRecognition;let rec=null;
-function listen(box,item,s,done){
- const msg=box.querySelector('.heard'),btn=box.querySelector('.rb');
- if(!SR){msg.textContent='Speech recognition is not available in this browser. Please open this page in Chrome, Edge or Safari.';return}
- if(rec){try{rec.stop()}catch(e){}rec=null;return}
- speechSynthesis&&speechSynthesis.cancel();document.getElementById('au').pause();
- rec=new SR();rec.lang='en-GB';rec.maxAlternatives=5;rec.interimResults=false;btn.classList.add('on');btn.innerHTML=I('mic')+'Listening… tap to stop';msg.textContent='';
- rec.onresult=e=>{let best={p:-1};for(const a of e.results[0]){const r=acc(a.transcript,item.say);r.txt=a.transcript;if(r.p>best.p)best=r}
-  s.sTries++;s.sBest=Math.max(s.sBest,best.p);const ok=best.p>=PASS,m=box.querySelector('.meter i');m.style.width=best.p+'%';m.className=ok?'ok':'';box.querySelector('.pct').textContent=best.p+'%';
-  const tw=norm(best.t).split(' '),hw=new Set(best.h);
-  msg.innerHTML='I heard: “'+best.txt+'”<br>'+tw.map(w=>hw.has(w)?`<s>${w}</s>`:`<u>${w}</u>`).join(' ')+(ok?'':'<br><b>Almost there. Listen to the model, then try again.</b>');
-  if(ok){s.sOK=true;box.dataset.ok=1;done(true)}else done(false)};
- rec.onerror=e=>{msg.textContent=(e.error==='not-allowed'||e.error==='service-not-allowed')?micHelp():e.error==='network'?'Speech recognition needs an internet connection. Check your connection and try again.':e.error==='audio-capture'?'No microphone was found. Plug in or enable a microphone, then try again.':e.error==='no-speech'?'No voice heard. Speak closer to the microphone and try again.':'Could not hear you ('+e.error+'). Try again.'};
- rec.onend=()=>{rec=null;btn.classList.remove('on');btn.innerHTML=I('mic')+'Record';};rec.start()}
-function spBox(it,s,hide,after){const d=document.createElement('div');d.className='sp';const tg=it.say[0].replace(/\bI’m\b/,'I’m');
- d.innerHTML=`<div class="tg ${hide?'hid':''}">${hide?'Look at the picture and answer in a full sentence, then press Record.':tg+'.'}</div>${hide&&it.pat?`<div class="pat">Pattern: ${it.pat}</div>`:''}<div class="row"><button class="btn sec ls">${I('spk')}Listen (UK)</button><button class="btn sec sl">${I('slow')}Slow</button><button class="btn rec rb">${I('mic')}Record</button><div class="meter"><i></i></div><span class="pct">0%</span></div><div class="heard" aria-live="polite">Say it until the bar passes the 90% line.</div>${hide?'<div class="row" style="margin-top:8px"><button class="btn sec hb">Show hint</button></div>':''}`;
- const txt=(hide?it.hint:it.say[0]+'.');d.querySelector('.ls').onclick=()=>say(txt,.9);d.querySelector('.sl').onclick=()=>say(txt,.6);
- d.querySelector('.rb').onclick=()=>listen(d,it,s,after);const hb=d.querySelector('.hb');if(hb)hb.onclick=()=>{d.querySelector('.tg').textContent=it.hint;d.querySelector('.tg').classList.remove('hid');s.hint=1;hb.remove()};
- if(s.sOK&&it.say){d.querySelector('.meter i').style.width=s.sBest+'%';d.querySelector('.meter i').className='ok';d.querySelector('.pct').textContent=s.sBest+'%';d.dataset.ok=1}return d}
+function spBox(it,s,after){const d=el(`<div class="sp"><div class="tg">${it.say[0]}.</div><div class="row"><button class="btn sec ls">${I('spk')}Listen (UK)</button><button class="btn sec sl">${I('slow')}Slow</button><button class="btn pri cf">I read it aloud</button></div><div class="heard">Listen to the model, read the whole sentence aloud, then tap the button.</div></div>`);
+ const txt=it.say[0]+'.',au=document.getElementById('au');d.querySelector('.ls').onclick=()=>{au.pause();say(txt,.9)};d.querySelector('.sl').onclick=()=>{au.pause();say(txt,.6)};
+ const cf=d.querySelector('.cf'),fin=()=>{cf.remove();d.querySelector('.heard').innerHTML='<b style="color:var(--ok)">Read aloud ✓</b>'};
+ cf.onclick=()=>{s.sTries=1;s.sOK=true;fin();after(true)};if(s.sOK)fin();return d}
 /* ====== render ====== */
 function el(h){const t=document.createElement('template');t.innerHTML=h.trim();return t.content.firstChild}
 function render(){const p=PARTS[cur],st=S[cur];$('#sc').textContent=Math.round(total())+' / 100';
@@ -220,8 +202,8 @@ function audioCard(){const au=$('#au'),c=el(`<div class="q"><div class="aud"><di
  c.querySelectorAll('.chip').forEach(x=>x.onclick=()=>{au.playbackRate=+x.dataset.r;c.querySelectorAll('.chip').forEach(y=>y.classList.toggle('on',y===x))});return c}
 function itemCard(p,it,s,j){const c=el(`<div class="q ${s.done?'done':''}"><div class="qh"><span class="qn">${j+1}</span><span>${it.q||''}</span></div><div class="mn"></div><div class="fb"></div></div>`),m=c.querySelector('.mn'),fb=c.querySelector('.fb');
  const fin=()=>{s.done=(s.fOK||it.k==='say')&&s.sOK;if(s.done)c.classList.add('done');$('#sc').textContent=Math.round(total())+' / 100';tabsUpdate()};
- const sayPart=()=>{if(!it.say||c.querySelector('.sp'))return;const sp=spBox(it,s,it.k==='say',ok=>{if(ok){fin();}});c.insertBefore(sp,fb)};
- const good=()=>{s.fOK=true;fb.className='fb ok';fb.textContent=it.say?'Correct! Now say the sentence aloud.':'Correct!';sayPart();fin()};
+ const sayPart=()=>{if(!it.say||c.querySelector('.sp'))return;const sp=spBox(it,s,ok=>{if(ok)fin()});c.insertBefore(sp,fb)};
+ const good=()=>{s.tries++;s.fOK=true;fb.className='fb ok';fb.textContent=it.say?'Correct! Now say the sentence aloud.':'Correct!';sayPart();fin()};
  const wrong=t=>{s.tries++;c.classList.add('bad');setTimeout(()=>c.classList.remove('bad'),600);fb.className='fb no';fb.textContent=t||'Not quite. Think again and try once more.'};
  if(it.k==='choice'){m.className='opts';m.innerHTML=it.pic.map((k,i)=>`<button class="opt" data-v="${'abc'[i]}" aria-label="Picture ${'abc'[i]}"><b>${'abc'[i]}</b><img class="z" src="${IMG[k]}" alt="Picture ${'abc'[i]}"></button>`).join('');
   m.querySelectorAll('.opt').forEach(o=>{if(s.done&&o.dataset.v===it.ans)o.classList.add('ok');o.onclick=()=>{if(s.done)return;s.tries++;if(o.dataset.v===it.ans){s.tries--;s.tries++;o.classList.add('ok');m.querySelectorAll('.opt').forEach(x=>x.disabled=true);s.fOK=true;fb.className='fb ok';fb.textContent='Correct!';fin()}else{o.classList.add('no');fb.className='fb no';fb.textContent='Not this picture. Listen again carefully.';setTimeout(()=>o.classList.remove('no'),400)}}})}
@@ -237,7 +219,12 @@ function itemCard(p,it,s,j){const c=el(`<div class="q ${s.done?'done':''}"><div 
   if(s.fOK){pick=it.tiles.map((t,i)=>({t,i}));pool=[];sayPart()}draw();
   m.querySelector('.rs').onclick=()=>{if(s.fOK)return;pool=pool.concat(pick);pick=[];draw()};
   m.querySelector('.ck').onclick=()=>{if(s.fOK)return;if(pick.length<it.tiles.length)return wrong('Use all the blocks first.');if(pick.every((x,i)=>x.i===i))good();else wrong('Not the right order. Remember: question words come first in a question.')}}
- if(it.k==='say'){m.innerHTML=`<img class="pic z" src="${IMG[it.img]}" alt="Picture clue for the question: ${it.q}">`;s.fOK=true;sayPart()}
+ if(it.k==='say'){m.innerHTML=`<img class="pic z" src="${IMG[it.img]}" alt="Picture clue for the question: ${it.q}"><div class="pat">Pattern: ${it.pat}</div><div class="fill"><input style="width:min(440px,100%);text-align:left" autocomplete="off" autocapitalize="sentences" spellcheck="false" placeholder="Write your answer…" aria-label="Your answer"><button class="btn sec ck">Check</button><button class="btn sec hb">Show hint</button></div>`;
+  const inp=m.querySelector('input'),hb=m.querySelector('.hb');
+  const ok=()=>{s.fOK=true;s.sOK=true;inp.className='ok';inp.readOnly=true;hb.remove();m.querySelector('.ck').remove();fb.className='fb ok';fb.innerHTML='Correct! Listen to the British model: ';const lb=el(`<button class="btn sec" style="min-height:36px;padding:4px 12px">${I('spk')}Listen (UK)</button>`);lb.onclick=()=>{$('#au').pause();say(it.hint,.9)};fb.appendChild(lb);fin()};
+  const chk=()=>{if(s.done)return;const v=inp.value.trim();if(!v)return;const r=acc(v,it.say);s.tries++;if(r.p>=PASS)ok();else{inp.className='no';fb.className='fb no';fb.textContent='Not yet ('+r.p+'% match). Use the pattern and look at the picture again.'}};
+  m.querySelector('.ck').onclick=chk;inp.onkeydown=e=>{if(e.key==='Enter')chk()};hb.onclick=()=>{s.hint=1;fb.className='fb no';fb.textContent='Hint: '+it.hint;hb.remove()};
+  if(s.done){inp.value=it.hint;ok()}}
  return c}
 function clozeCard(){const s=S[cur][0],p=PARTS[cur];
  const c=el(`<div class="q"><div class="bank">${CLOZE.words.map(w=>`<span>${w}</span>`).join('')}</div><div class="story"></div><div class="fb"></div></div>`),fb=c.querySelector('.fb');
@@ -251,19 +238,15 @@ function tabsUpdate(){const all=S.flat();$('#pb').style.width=all.filter(x=>x.do
 /* ====== flow ====== */
 document.addEventListener('click',e=>{const g=e.target;if(g.tagName==='IMG'&&g.classList.contains('z')&&!g.closest('.opt')){$('#zi').src=g.src;$('#zmd').showModal()}});$('#zc').onclick=()=>$('#zmd').close();$('#zmd').onclick=e=>{if(e.target.id==='zmd')$('#zmd').close()};
 function dlg(h,t,ok,cb){$('#dgh').textContent=h;$('#dgt').textContent=t;$('#dgo').textContent=ok;$('#dgo').onclick=()=>{$('#dg').close();cb()};$('#dgc').onclick=()=>$('#dg').close();$('#dg').showModal()}
-async function micTest(){const o=$('#mics');if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia||!SR){o.className='fb no';o.textContent=SR?micHelp():'This browser cannot do speech recognition. Please use Chrome, Edge or Safari. '+(location.protocol==='file:'?micHelp():'');return false}
- try{const m=await navigator.mediaDevices.getUserMedia({audio:true});m.getTracks().forEach(x=>x.stop());o.className='fb ok';o.textContent='Microphone is ready. You can start.';return true}catch(_){o.className='fb no';o.textContent=micHelp();return false}}
-$('#mt').onclick=micTest;
 $('#form').onsubmit=async e=>{e.preventDefault();const v=$('#nm').value.trim();if(v.length<3){$('#nm').classList.add('err');return}user=v;
- await micTest();
  S=fresh();cur=0;$('#start').classList.add('hide');$('#app').classList.remove('hide');render()};
 $('#prev').onclick=()=>{if(cur>0){cur--;render();scrollTo(0,0)}};
 $('#next').onclick=()=>{if(!pDone(cur))return;if(cur<PARTS.length-1){cur++;render();scrollTo(0,0)}else result()};
 function result(){$('#au').pause();$('#app').classList.add('hide');const r=$('#res');r.classList.remove('hide');const T=Math.round(total());
  const rows=PARTS.map((p,i)=>{const sc=p.items.reduce((a,it,j)=>a+itemScore(p,it,S[i][j]),0);const tr=S[i].reduce((a,x)=>a+x.tries,0),st=S[i].reduce((a,x)=>a+x.sTries,0),bs=S[i].filter(x=>x.sTries).map(x=>x.sBest);
-  return `<tr><td>${p.t}</td><td>${tr||'–'}</td><td>${st||'–'}</td><td>${bs.length?Math.round(bs.reduce((a,b)=>a+b,0)/bs.length)+'%':'–'}</td><td><b>${sc.toFixed(1)}</b> / ${p.pts}</td></tr>`}).join('');
+  return `<tr><td>${p.t}</td><td>${tr||'–'}</td><td><b>${sc.toFixed(1)}</b> / ${p.pts}</td></tr>`}).join('');
  const msg=T>=90?'Outstanding! Your accuracy and speaking are excellent.':T>=75?'Very good! Practise the sentences that took more tries.':'Good effort! Review the model audio and speak slowly and clearly.';
- r.innerHTML=`<div class="score"><span>${user}</span><b>${T}</b><span>out of 100 · ${msg}</span></div><div class="card" style="margin-top:16px"><h2>Report</h2><p class="sub">Self-check 1 · Global Success 4 · ${new Date().toLocaleDateString('en-GB')}</p><div style="overflow-x:auto"><table class="tbl"><tr><th>Part</th><th>Answer tries</th><th>Speaking tries</th><th>Avg. accuracy</th><th>Points</th></tr>${rows}</table></div><div class="row2"><button class="btn pri" onclick="print()">Download report (PDF)</button><button class="btn sec" id="rt">Practise again</button></div></div>`;
+ r.innerHTML=`<div class="score"><span>${user}</span><b>${T}</b><span>out of 100 · ${msg}</span></div><div class="card" style="margin-top:16px"><h2>Report</h2><p class="sub">Self-check 1 · Global Success 4 · ${new Date().toLocaleDateString('en-GB')}</p><div style="overflow-x:auto"><table class="tbl"><tr><th>Part</th><th>Answer tries</th><th>Points</th></tr>${rows}</table></div><div class="row2"><button class="btn pri" onclick="print()">Download report (PDF)</button><button class="btn sec" id="rt">Practise again</button></div></div>`;
  $('#rt').onclick=()=>dlg('Practise again?','Your current result will be cleared.','Restart',()=>{r.classList.add('hide');$('#start').classList.remove('hide')});scrollTo(0,0)}
 </script>
 </body>
